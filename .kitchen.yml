@@ -1,0 +1,27 @@
+driver:
+  name: ec2
+  aws_ssh_key_id: andrei
+  region: us-east-1
+  availability_zone: us-east-1e
+  security_group_ids: sg-05f8128d55190c40f
+  subnet_id: subnet-04a0141b12b2d7101
+  associate_public_ip: true
+  interface: dns
+  public: true
+
+provisioner:
+  name: shell
+
+platforms:
+  - name: ubuntu
+    driver:
+      image_id: ami-0fea418d626d0e726
+    transport:
+      username: ubuntu
+      ssh_key: ../ec2-keys/andrei.pem
+
+verifier:
+  name: inspec
+
+suites:
+  - name: default
