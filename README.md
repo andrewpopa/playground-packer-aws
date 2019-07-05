@@ -13,8 +13,8 @@ packer build nginx.json
 The preferred way to provide credentials to Test Kitchen is to assign the keys to the following environment variables on your workstation.
 
 ```
-AWS_ACCESS_KEY – your user's access key, which will look something like AKIAIOSFODNN7EXAMPLE
-AWS_SECRET_KEY – your user's secret key, which will look something like wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+AWS_ACCESS_KEY 
+AWS_SECRET_KEY
 ```
 
 ## pre-requisites
